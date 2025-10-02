@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="nature">Nature</button>
+      <button class="filter-btn" data-category="architecture">Architecture</button>
+      <button class="filter-btn" data-category="animals">Animals</button>
+    </div>
+
+    <!-- Image Grid -->
+    <div class="gallery">
+      <div class="gallery-item" data-category="nature">
+        <img src="https://source.unsplash.com/400x300/?nature,water" alt="Nature Image">
+      </div>
+      <div class="gallery-item" data-category="architecture">
+        <img src="https://source.unsplash.com/400x300/?building" alt="Architecture">
+      </div>
+      <div class="gallery-item" data-category="animals">
+        <img src="https://source.unsplash.com/400x300/?cat" alt="Cat">
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://source.unsplash.com/400x300/?forest" alt="Forest">
+      </div>
+      <div class="gallery-item" data-category="architecture">
+        <img src="https://source.unsplash.com/400x300/?city" alt="City">
+      </div>
+      <div class="gallery-item" data-category="animals">
+        <img src="https://source.unsplash.com/400x300/?dog" alt="Dog">
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="lightbox-close">&times;</span>
+    <img class="lightbox-image" id="lightbox-image" src="" alt="">
+    <div class="lightbox-nav">
+      <span class="prev" id="prev">&#10094;</span>
+      <span class="next" id="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
